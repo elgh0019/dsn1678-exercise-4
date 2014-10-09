@@ -30,18 +30,46 @@ section {
 .js-dipper-fade {
 	-webkit-animation: dipper-fade 1s linear forwards;
 }
-.shuttle{
+.shuttle {
 	width: 300px;
 	opacity:0;
+	transform: translateY(100px) ;
 }
-.shuttle-section{
+.shuttle-section {
 	background-color:#FC0;
 	background-size:cover;
 }
 .js-shuttle-fade {
-	webkit-animation: shuttle-fade 1s linear forwards;
+	-webkit-animation: shuttle-fade 1s linear forwards;
+}
+
+
+.ship-section {
+	background: transparent url("../img/kasei-valles-canyons.jpg") no-repeat center;
+	background-size:cover;
+	
+}
+.ships{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align: center;
+}
+.ships li{
+	display:inline-block;
+	margin: 0 2em;
+	
+}
+.ships img{
+	width: 150px;
+	opacity: 0;
+}
+
+.js-ships-fly{
+	-webkit-animation: ships-fly 1s linear forwards;
 }
 	
+
 
 /* dont forget to put in all the prefixes!!!*/
 @-webkit-keyframes dipper-fade {
@@ -55,6 +83,19 @@ section {
 	}
 	
 @-webkit-keyframes shuttle-fade {
+	0% {
+		opacity:0;
+		transform: translateY(100px) ;
+
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px) ;
+
+		
+	}
+	}
+@-webkit-keyframes ships-fly {
 	0% {
 		opacity:0;
 	}
