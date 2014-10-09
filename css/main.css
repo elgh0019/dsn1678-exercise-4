@@ -67,8 +67,8 @@ section {
 
 .js-ships-fly{
 	-webkit-animation: ships-fly 1s linear forwards;
+
 }
-	
 
 
 /* dont forget to put in all the prefixes!!!*/
