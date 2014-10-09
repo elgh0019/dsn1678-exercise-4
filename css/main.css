@@ -20,7 +20,7 @@ section {
 
 .sun-section {
 	background: transparent url("../img/mars-pano.jpg") no-repeat center;
-	background:
+	background-size:cover;
 	
 }
 .dipper {
@@ -30,9 +30,32 @@ section {
 .js-dipper-fade {
 	-webkit-animation: dipper-fade 1s linear forwards;
 }
+.shuttle{
+	width: 300px;
+	opacity:0;
+}
+.shuttle-section{
+	background-color:#FC0;
+	background-size:cover;
+}
+.js-shuttle-fade {
+	webkit-animation: shuttle-fade 1s linear forwards;
+}
+	
+
 /* dont forget to put in all the prefixes!!!*/
 @-webkit-keyframes dipper-fade {
-	0%{
+	0% {
+		opacity:0;
+	}
+	100% {
+		opacity: 1;
+		
+	}
+	}
+	
+@-webkit-keyframes shuttle-fade {
+	0% {
 		opacity:0;
 	}
 	100% {
